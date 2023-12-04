@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table & List</title>
+    <style>
+      /* Table */
+      .table {
+        display: table;
+        width: auto;
+        border: 1px solid rgb(71, 70, 70);
+      }
+      .table-header {
+        display: table-row;
+        width: auto;
+        font-weight: 900;
+      }
+      .table-row {
+        display: table-row;
+        width: auto;
+      }
+      .table-col {
+        float: left;
+        display: table-column;
+        width: 150px;
+        border: 1px solid rgb(71, 70, 70);
+      }
+      /* List */
+      .list {
+        position: relative;
+      }
+      .list-item {
+        position: absolute;
+        top: 24px;
+        left: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>A Table and list without using Table, Tr, Th and Td tag</h1>
+
+    <div class="table">
+      <div class="table-header">
+        <div class="table-col">Roll No.</div>
+        <div class="table-col">Student Name</div>
+        <div class="table-col">Grade</div>
+      </div>
+      <div class="table-row">
+        <div class="table-col">01</div>
+        <div class="table-col">Sagar</div>
+        <div class="table-col">A</div>
+      </div>
+      <div class="table-row">
+        <div class="table-col">02</div>
+        <div class="table-col">Manish Rawat</div>
+        <div class="table-col">A</div>
+      </div>
+      <div class="table-row">
+        <div class="table-col">03</div>
+        <div class="table-col">Mahesh Sorout</div>
+        <div class="table-col">A</div>
+      </div>
+    </div>
+
+    <h1>A list without using Ul And Li tag</h1>
+    <div class="list">
+      Details about Sagar :
+      <div class="list-item">• My name is Sagar.</div>
+      <div class="list-item" style="top: 42px">
+        • I am from palwal, and I come from a Farming Family.
+      </div>
+      <div class="list-item" style="top: 60px">
+        • I am currently doing MERN-Weekdays-1 Course from GFG.
+      </div>
+    </div>
+  </body>
+</html>
+ 
