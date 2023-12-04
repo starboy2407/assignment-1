@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>album + checkout</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            background-color: black;
+            position: sticky;
+            top: 0px;
+            font-size: 20px;
+            padding: 10px;
+        }
+        header > p{
+            color: white;
+            display: inline;
+            padding: 0 30px;
+            margin-right: 63%;
+        }
+        header > p:hover{
+            color: grey;
+            cursor: pointer;
+        }
+        ul{
+            display: inline;
+        }
+        li{
+            padding-left: 30px;
+            color: white;
+            display: inline;
+        }
+        li:hover{
+            color: grey;
+            cursor: pointer;
+        }
+        section{
+            padding-top: 40px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        section > h1{
+            margin-bottom: 20px;
+        }
+        section > p{
+            margin-bottom: 20px;
+            padding: 0 25%;
+        }
+        section > button{
+            color: white;
+            padding: 10px 20px;
+            border: 0;
+            border-radius: 5px;
+            margin: 0 5px;
+        }
+        .btn-blue{
+            background-color: rgb(44, 44, 184);
+        }
+        .btn-blue:hover{
+            background-color: rgb(7, 7, 99);
+        }
+        .btn-grey{
+            background-color: rgb(79, 79, 80);
+        }
+        .btn-grey:hover{
+            background-color: rgb(25, 25, 26);
+        }
+        .contact{
+            position: fixed;
+            right: 30px;
+            bottom: 20px;
+            padding: 20px;
+            border-radius: 40px;
+            background-color: rgb(44, 44, 184);
+            color: whitesmoke;
+        }
+        .contact:hover{
+            background-color: rgb(7, 7, 99);
+        }
+        .form {
+        background-color: #f3f4f7;
+        padding: 160px 0px;
+        border-radius: 24px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: relative;
+        margin: 120px 20%;
+      }
+      .form > p {
+        font-size: 10px;
+        position: absolute;
+      }
+      .form > label {
+        font-size: 18px;
+        position: absolute;
+      }
+      .form > input {
+        position: absolute;
+        border: 1px solid rgb(179, 178, 178);
+        border-radius: 5px;
+        font-size: 18px;
+        padding: 4px 0 4px 4px;
+      }
+      .form > button {
+        position: absolute;
+        width: 66%;
+        border: 3px solid rgb(59, 59, 219);
+        background-color: rgb(80, 80, 240);
+        padding: 7px 0;
+        color: whitesmoke;
+        font-size: 18px;
+        border-radius: 9px;
+        top: 75%;
+        left: 17%;
+      }
+      .form > button:hover {
+        background-color: rgb(59, 59, 219);
+        cursor: pointer;
+      }
+      input:focus {
+        border: 1px solid rgb(104, 103, 103);
+        outline: none;
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <p>Album</p>
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li style="padding-right: 30px;">Contact</li>
+        </ul>
+    </header>
+    <section>
+        <h1>Album Example</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente hic earum quod, ex magnam aperiam mollitia nesciunt cumque dignissimos rem officia quam optio, commodi molestias illo voluptate illum delectus repellendus.</p>
+        <button class="btn-blue">Main Call to Action</button>
+        <button class="btn-grey">Secondary Action</button>
+    </section>
+    <div class="form">
+        <label style="left: 17%; top: 10%">Name on Card</label>
+        <input style="left: 17%; top: 20%" type="text" />
+        <label style="left: 17%; top: 30%; font-size: 10px"
+          >Full Name as displayed on Card</label
+        >
+        <label style="left: 53%; top: 10%">Credit Card Number</label>
+        <input style="left: 53%; top: 20%" type="number" />
+        <label style="left: 17%; top: 45%">Expiration</label>
+        <input style="left: 17%; top: 55%; width: 100px" type="number" />
+        <label style="left: 35%; top: 45%">CVV</label>
+        <input style="left: 35%; top: 55%; width: 100px" type="number" />
+        <button>Continue to Checkout</button>
+      </div>
+</body>
+</html>
